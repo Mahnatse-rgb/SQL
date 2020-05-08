@@ -75,10 +75,10 @@ CREATE TABLE Orders (
   PRIMARY KEY (OrderID),
   KEY ProductID (ProductID),
   KEY FulfilledByEmployeeID (FulfilledByEmployeeID),
-  CONSTRAINT Orders_ibfk_1 FOREIGN KEY (ProductID) REFERENCES Products (ProductID),
-  CONSTRAINT Orders_ibfk_2 FOREIGN KEY (ProductID) REFERENCES Products (ProductID),
-  CONSTRAINT Orders_ibfk_3 FOREIGN KEY (ProductID) REFERENCES Products (ProductID),
-  CONSTRAINT Orders_ibfk_4 FOREIGN KEY (FulfilledByEmployeeID) REFERENCES Employees (EmployeeID)
+  CONSTRAINT Orders_fk1 FOREIGN KEY (ProductID) REFERENCES Products (ProductID),
+  CONSTRAINT Orders_fk2 FOREIGN KEY (ProductID) REFERENCES Products (ProductID),
+  CONSTRAINT Orders_fk3 FOREIGN KEY (ProductID) REFERENCES Products (ProductID),
+  CONSTRAINT Orders_fk4 FOREIGN KEY (FulfilledByEmployeeID) REFERENCES Employees (EmployeeID)
 );
 
 INSERT INTO Orders VALUES (1,1,1,2,'2018-09-05 00:00:00',NULL,'Not shipped'),
