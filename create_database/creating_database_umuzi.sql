@@ -15,10 +15,10 @@ CREATE TABLE Customers (
   PRIMARY KEY (CustomerID)
 );
 
-INSERT INTO Customers VALUES (1,'Lerato','Mabitso','Male','284 chaucer st',84789657,'john@gmail.com','Johannesburg','South Africa'),
-(3,'Leon','Glen','Male','81 Everton Rd,Gillits',820832830,'Leon@gmail.com','Durban','South Africa'),
-(4,'Charl','Muller','Male','290A Dorset Ecke',44856872553,'Charl.muller@yahoo.com','Berlin','Germany'),
-(5,'Julia','Stein','Female','2 Wernerring',448672445058,'Js234@yahoo.com','Frankfurt','Germany');
+INSERT INTO Customers VALUES ('Lerato','Mabitso','Male','284 chaucer st',84789657,'john@gmail.com','Johannesburg','South Africa'),
+('Leon','Glen','Male','81 Everton Rd,Gillits',820832830,'Leon@gmail.com','Durban','South Africa'),
+('Charl','Muller','Male','290A Dorset Ecke',44856872553,'Charl.muller@yahoo.com','Berlin','Germany'),
+('Julia','Stein','Female','2 Wernerring',448672445058,'Js234@yahoo.com','Frankfurt','Germany');
 
 
 CREATE TABLE Employees (
@@ -30,9 +30,9 @@ CREATE TABLE Employees (
   PRIMARY KEY (EmployeeID)
 );
 
-INSERT INTO Employees VALUES (1,'Kani','Matthew','mat@gmail.com','Manager'),
-(2,'Lesly','Cronje','LesC@gmail.com','Clerk'),
-(3,'Gideon','Maduku','m@gmail.com','Accountant');
+INSERT INTO Employees VALUES ('Kani','Matthew','mat@gmail.com','Manager'),
+('Lesly','Cronje','LesC@gmail.com','Clerk'),
+('Gideon','Maduku','m@gmail.com','Accountant');
 
 
 CREATE TABLE Payments (
@@ -43,9 +43,9 @@ CREATE TABLE Payments (
   PRIMARY KEY (CustomerID)
 );
 
-INSERT INTO Payments VALUES (1,1,'2018-09-01 00:00:00',150.75),
-(4,3,'2018-09-03 00:00:00',700.60),
-(5,2,'2018-09-03 00:00:00',150.70);
+INSERT INTO Payments VALUES (1,'2018-09-01 00:00:00',150.75),
+(3,'2018-09-03 00:00:00',700.60),
+(2,'2018-09-03 00:00:00',150.70);
 
 
 
@@ -59,9 +59,9 @@ CREATE TABLE Products (
 
 
 
-INSERT INTO Products VALUES (1,'Harley Davidson Chopper','This replica features working kickstand, front suspension, gear-shift lever',150.75),
-(2,'Classic Car','Turnable front wheels, steering function',550.75),
-(3,'Sports car','Turnable front wheels, steering function',700.60);
+INSERT INTO Products VALUES ('Harley Davidson Chopper','This replica features working kickstand, front suspension, gear-shift lever',150.75),
+('Classic Car','Turnable front wheels, steering function',550.75),
+('Sports car','Turnable front wheels, steering function',700.60);
 
 
 CREATE TABLE Orders (
